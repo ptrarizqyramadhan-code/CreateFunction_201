@@ -1,7 +1,4 @@
 import math
-
-# 1. Function untuk mengkonversi suhu Celsius ke Fahrenheit
-#    dan Fahrenheit ke Celsius
 def convert_temperature(value, unit):
     if unit == 'C':
         return (value * 9/5) + 32
@@ -10,20 +7,13 @@ def convert_temperature(value, unit):
     else:
         return "Unit tidak valid"
 
-
-# Menampilkan hasil function konversi suhu
 print("=== KONVERSI SUHU ===")
 
 print("25°C =", convert_temperature(25, 'C'), "°F")
 print("77°F =", convert_temperature(77, 'F'), "°C")
 
-
-# 2. Lambda function untuk menghitung luas lingkaran
-#    Input: jari-jari lingkaran
 circle_area = lambda r: math.pi * r**2
 
-
-# Menampilkan hasil lambda function
 print("\n=== LUAS LINGKARAN ===")
 
 jari_jari = 7
